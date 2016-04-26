@@ -1,0 +1,17 @@
+{
+    "name": "ganglio/duophp",
+    "description": "A php implementation of base16 duotone themes generator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roberto Torella",
+            "email": "roberto.torella@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "twig/twig": "^1.24",
+        "symfony/yaml": "^3.0",
+        "mischiefcollective/colorjizz": "*"
+    }
+}

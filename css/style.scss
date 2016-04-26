@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Nova+Mono);
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	text-transform: lowercase;
+	font-family: 'Nova Mono', monospace;
+}
+
+header {
+	height: 60px;
+	line-height: 60px;
+	font-size: 40px;
+	border-bottom: 1px dotted rgba(0,0,0,0.2);
+	padding: 0 20px;
+}
+
+.list {
+	.scheme {
+		margin-top: 10px;
+		.title {
+			cursor: pointer;
+			background-color: white;
+			height: 30px;
+			line-height: 30px;
+			font-size: 20px;
+			padding: 0 20px;
+		}
+		.entries {
+			display: flex;
+			flex-direction: row;
+		}
+		.entry {
+			text-align: center;
+			height: 40px;
+			line-height: 40px;
+			.name {
+
+			}
+			.color {
+
+			}
+		}
+		&[data-size='small'] {
+			.entry {
+				width: 6.25vw;
+				.name {
+					display: none;
+				}
+			}
+		}
+		&[data-size='large'] {
+			.entry {
+				width: 100vw;
+			}
+		}
+	}
+}

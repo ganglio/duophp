@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Nova+Mono);
+/* line 3, style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 7, style.scss */
+body {
+  margin: 0;
+  padding: 0;
+  text-transform: lowercase;
+  font-family: 'Nova Mono', monospace;
+}
+
+/* line 14, style.scss */
+header {
+  height: 60px;
+  line-height: 60px;
+  font-size: 40px;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+  padding: 0 20px;
+}
+
+/* line 23, style.scss */
+.list .scheme {
+  margin-top: 10px;
+}
+/* line 25, style.scss */
+.list .scheme .title {
+  cursor: pointer;
+  background-color: white;
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  padding: 0 20px;
+}
+/* line 33, style.scss */
+.list .scheme .entries {
+  display: flex;
+  flex-direction: row;
+}
+/* line 37, style.scss */
+.list .scheme .entry {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+/* line 49, style.scss */
+.list .scheme[data-size='small'] .entry {
+  width: 6.25vw;
+}
+/* line 51, style.scss */
+.list .scheme[data-size='small'] .entry .name {
+  display: none;
+}
+/* line 57, style.scss */
+.list .scheme[data-size='large'] .entry {
+  width: 100vw;
+}
