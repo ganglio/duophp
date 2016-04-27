@@ -44,16 +44,5 @@ header {
   text-align: center;
   height: 40px;
   line-height: 40px;
-}
-/* line 49, style.scss */
-.list .scheme[data-size='small'] .entry {
   width: 6.25vw;
-}
-/* line 51, style.scss */
-.list .scheme[data-size='small'] .entry .name {
-  display: none;
-}
-/* line 57, style.scss */
-.list .scheme[data-size='large'] .entry {
-  width: 100vw;
 }

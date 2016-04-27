@@ -11,13 +11,12 @@
 	<header>Duotone PHP</header>
 	<div class='list'>
 		{% for scheme in schemes %}
-			<article class='scheme' data-size='small'>
+			<article class='scheme'>
 				<div class='title'>{{ scheme.scheme }}</div>
 				<div class='entries'>
 					{% for k,v in scheme %}
 						{% if k | slice(0,4) == "base" %}
 							<div class='entry {{ k }}' style='background-color: #{{ v }};'>
-								<span class='name'>{{ k }}</span>
 								<span class='color'>{{ v }}</span>
 							</div>
 						{% endif %}
