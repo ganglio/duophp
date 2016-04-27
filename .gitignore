@@ -1,5 +1,5 @@
 .DS_Store
 vendor
 .sass-cache
-output/itermcolors output/tmTheme
+output/**
 !.gitkeep
